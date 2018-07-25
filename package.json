@@ -1,0 +1,18 @@
+{
+  "name": "bug-reports",
+  "version": "1.0.0",
+  "description": "Bug reports / Algolia",
+  "main": "index.js",
+  "repository": "git@github.com:brianmhunt/bug-reports.git",
+  "author": "Brian M Hunt <bmh@tko.io>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "algoliasearch": "^3.29.0"
+  },
+  "devDependencies": {
+    "directory-named-webpack-plugin": "^4.0.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
