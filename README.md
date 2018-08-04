@@ -1,1 +1,1 @@
-Consolidation of multiple bug reports, by-branch
+Test case for https://github.com/firebase/firebase-functions/issues/300
