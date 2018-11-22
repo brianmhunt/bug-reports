@@ -1,6 +1,6 @@
 ## Test case for firestore emulator timeouts.
 
-See: firebase/firebase-js-sdk#1396
+See: [firebase/firebase-js-sdk#1396](https://github.com/firebase/firebase-js-sdk/issues/1396)
 
 Setup:
 
