@@ -9,8 +9,13 @@ const ALLOW = '/__reflect/allow'
 const DENY = '/__reflect/deny'
 
 async function initApp (auth, projectId = `project-${i++}`) {
+  const start = new Date()
   await firebase.loadFirestoreRules({ projectId, rules: RULES })
-  return firebase.initializeTestApp({ projectId, auth })
+  console.log(`Rules loaded in ${new Date() - start} ms`)
+  const initDate = new Date()
+  const app = await firebase.initializeTestApp({ projectId, auth })
+  console.log(`App initialized in ${new Date() - initDate} ms`)
+  return app 
 }
 
 expect.extend({ toRead, toCreate, toUpdate, toDelete })
@@ -43,9 +48,7 @@ describe('firebase emulator', () => {
   })
 
   it('does not time out 5', async () => {
-    const start = new Date()
     const app = await initApp({ uid: 'uid-0' })
-    console.log(`Init too ${new Date() - start} ms`)
     await expect(app).toRead(ALLOW)
     await expect(app).toCreate(ALLOW)
     await expect(app).toCreate(ALLOW)
