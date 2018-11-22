@@ -1,5 +1,7 @@
 ## Test case for firestore emulator timeouts.
 
+See: firebase/firebase-js-sdk#1396
+
 Setup:
 
 ```bash
