@@ -21,8 +21,10 @@ module.exports = {
         exclude: /(node_modules)/ },
       { test: /\.svg$/,
         type: 'javascript/auto',
+	//include: [path.resolve('node_modules/icon')],
+        //exclude: /node_modules\/(?!icon)/,
         use: [
-          { loader: 'babel-loader' },
+          { loader: 'babel-loader', options: { ignore: [], exclude: [], include: /.*/ } },
           { loader: path.resolve('./webpack-svg-loader') }
         ]
       }
