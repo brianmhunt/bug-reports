@@ -1,1 +1,6 @@
-Consolidation of multiple bug reports, by-branch
+WebPack + SVG + JSX
+
+Reproduce with
+
+    `make`
+
