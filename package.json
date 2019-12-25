@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/brianmhunt/bug-reports#readme",
   "dependencies": {
-    "firebase-cli": "^1.2.0"
+    "firebase-tools": "^7.11.0"
   }
 }
