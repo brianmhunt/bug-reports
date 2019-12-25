@@ -6,4 +6,5 @@ npm i firebase
 
 echo "CLO?UD CREDS:: $GOOGLE_APPLICATION_CREDENTIALS / $FIREBASE_TOKEN"
 
+npx firebase login
 npx firebase deploy --project minutebox-labs --only hosting --debug
