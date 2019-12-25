@@ -2,6 +2,9 @@ steps:
 - name: gcr.io/cloud-builders/gcloud-slim
   args: ['config', 'get-value', 'account']
 
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
 - name: "node:10"
   entrypoint: bash
   args: ["run.sh"]

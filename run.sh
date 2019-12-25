@@ -2,6 +2,6 @@
 set -x
 
 echo "Hello world."
-npm i -g firebase
+npm i firebase
 
-firebase --version
+npx firebase --version

@@ -1,0 +1,22 @@
+{
+  "name": "bug-reports",
+  "version": "1.0.0",
+  "description": "This project is intended to sort out how cloud build can deploy to firebase from a central \"architect\" deployer project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianmhunt/bug-reports.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianmhunt/bug-reports/issues"
+  },
+  "homepage": "https://github.com/brianmhunt/bug-reports#readme",
+  "dependencies": {
+    "firebase-cli": "^1.2.0"
+  }
+}
