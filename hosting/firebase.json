@@ -1,0 +1,8 @@
+{
+  "hosting": {
+    "public": "hosting",
+    "ignore": [],
+    "headers": [],
+    "cleanUrls": true
+  }
+}

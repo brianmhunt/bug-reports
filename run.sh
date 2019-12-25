@@ -4,4 +4,4 @@ set -x
 echo "Hello world."
 npm i firebase
 
-npx firebase --version
+npx firebase deploy --project minutebox-labs --only hosting 
