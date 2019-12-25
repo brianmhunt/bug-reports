@@ -1,4 +1,4 @@
 steps:
--  name: "node:10"
-    entrypoint: bash
-    args: ["run.sh"]
+- name: "node:10"
+  entrypoint: bash
+  args: ["run.sh"]
